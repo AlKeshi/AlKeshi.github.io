@@ -1,7 +1,7 @@
 ---
 title: "First Post"
 author: "Salem Fradi"
-date: "`r format(Sys.time(), '%e %B %Y')`"
+date: today
 format: html
 ---
 こんにちは!
@@ -39,3 +39,4 @@ Now all that remains is to plug $p = 101$, and since we have $2 \cdot (101)^{2} 
 ## Comment
 
 > I honestly found this problem somewhat nice and bad at the same time because coming up with the function $f(n) = 2pn + \{ n^{2} \}$ wasn't trivial at all, which actually kills the problem immediately but the result is pretty nice!
+
