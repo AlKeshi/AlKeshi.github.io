@@ -1,0 +1,41 @@
+---
+title: "First Post"
+author: "Salem Fradi"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"  # This will now correctly show the date
+format: html
+---
+こんにちは!
+
+This is my first post so I hope that you like it o(>ω<)o
+
+## Problem
+
+> Is it possible to find $100$ positive integers not exceeding $25,000$, such that all pairwise sums of them are different?  
+> **Source**: IMO ShortList $2001$, number theory problem $6$
+
+## Solution
+
+The answer is actually Yes!
+
+Let  $p$  be any odd prime number. In this solution, we will denote
+
+as the remainder of n when divided by $p$.
+
+We now try to prove this lemma which kills the problem miraculously!
+### Lemma
+
+> Given any odd prime number $p$ we can get $p$  positive integers that don't exceed $2p^{2}$ such that the pairwise sums of the integers are all different.
+
+#### Proof of the lemma:
+
+Let $f(n) = 2pn + \{ n^{2} \}$ for all  $n = 0, \ldots, p-1$ .
+
+Let's assume that $f(a) + f(b) = f(c) + f(d)$; then we can easily notice that it implies  $a + b = c + d$  since $\lfloor \frac{f(a) + f(b)}{2p} \rfloor = a + b$, which also means that $\{ a^{2} \} + \{ b^{2} \} = \{ c^{2} \} + \{ d^{2} \}$.
+
+Now we have the following conditions: $a + b \equiv c + d \pmod{p}$  and  $a^{2} + b^{2} \equiv c^{2} + d^{2} \pmod{p}$, and the fact that $0 \leq a,b,c,d \leq p - 1$  implies that the pairs  $\{ a,b \}  and  \{ c,d \}$  are actually the same. So that means if we have  $\{ a,b \} \neq \{ c,d \}$, then we immediately have  $f(a) + f(b) \neq f(c) + f(d)$, which finishes the proof of the lemma.
+
+Now all that remains is to plug $p = 101$, and since we have $2 \cdot (101)^{2} < 25000$, our problem is done $\blacksquare$.
+
+## Comment
+
+> I honestly found this problem somewhat nice and bad at the same time because coming up with the function $f(n) = 2pn + \{ n^{2} \}$ wasn't trivial at all, which actually kills the problem immediately but the result is pretty nice!

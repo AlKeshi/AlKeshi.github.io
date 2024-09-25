@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Salem Fradi">
 
-<title>Website</title>
+<title>First Post – Website</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -118,7 +119,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -126,7 +127,7 @@ window.Quarto = {
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./post.html"> 
+    <a class="nav-link active" href="./post.html" aria-current="page"> 
 <span class="menu-text">math</span></a>
   </li>  
 </ul>
@@ -157,7 +158,9 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#tres-bien" id="toc-tres-bien" class="nav-link active" data-scroll-target="#tres-bien">TRES BIEN</a></li>
+  <li><a href="#problem" id="toc-problem" class="nav-link active" data-scroll-target="#problem">Problem</a></li>
+  <li><a href="#solution" id="toc-solution" class="nav-link" data-scroll-target="#solution">Solution</a></li>
+  <li><a href="#comment" id="toc-comment" class="nav-link" data-scroll-target="#comment">Comment</a></li>
   </ul>
 </nav>
     </div>
@@ -166,14 +169,26 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Website</h1>
+<h1 class="title">First Post</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Salem Fradi </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">Invalid Date</p>
+    </div>
+  </div>
   
     
   </div>
@@ -183,21 +198,37 @@ window.Quarto = {
 </header>
 
 
-<p>Hi Monsieur Oussema, do you like Mr.ZC? here’s a scary chart for you:</p>
-<div id="55f7dafa" class="cell" data-execution_count="1">
-<div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="index_files/figure-html/cell-2-output-1.png" width="389" height="389" class="figure-img"></p>
-</figure>
-</div>
-</div>
-</div>
-<section id="tres-bien" class="level2">
-<h2 class="anchored" data-anchor-id="tres-bien">TRES BIEN</h2>
-<p><span class="math display">\[
-\chi' = \sum_{i=1}^n k_i s_i^2
-\]</span></p>
+<p>こんにちは!</p>
+<p>This is my first post so I hope that you like it o(&gt;ω&lt;)o</p>
+<section id="problem" class="level2">
+<h2 class="anchored" data-anchor-id="problem">Problem</h2>
+<blockquote class="blockquote">
+<p>Is it possible to find <span class="math inline">\(100\)</span> positive integers not exceeding <span class="math inline">\(25,000\)</span>, such that all pairwise sums of them are different?<br>
+<strong>Source</strong>: IMO ShortList <span class="math inline">\(2001\)</span>, number theory problem <span class="math inline">\(6\)</span></p>
+</blockquote>
+</section>
+<section id="solution" class="level2">
+<h2 class="anchored" data-anchor-id="solution">Solution</h2>
+<p>The answer is actually Yes!</p>
+<p>Let <span class="math inline">\(p\)</span> be any odd prime number. In this solution, we will denote</p>
+<p>as the remainder of n when divided by <span class="math inline">\(p\)</span>.</p>
+<p>We now try to prove this lemma which kills the problem miraculously! ### Lemma</p>
+<blockquote class="blockquote">
+<p>Given any odd prime number <span class="math inline">\(p\)</span> we can get <span class="math inline">\(p\)</span> positive integers that don’t exceed <span class="math inline">\(2p^{2}\)</span> such that the pairwise sums of the integers are all different.</p>
+</blockquote>
+<section id="proof-of-the-lemma" class="level4">
+<h4 class="anchored" data-anchor-id="proof-of-the-lemma">Proof of the lemma:</h4>
+<p>Let <span class="math inline">\(f(n) = 2pn + \{ n^{2} \}\)</span> for all <span class="math inline">\(n = 0, \ldots, p-1\)</span> .</p>
+<p>Let’s assume that <span class="math inline">\(f(a) + f(b) = f(c) + f(d)\)</span>; then we can easily notice that it implies <span class="math inline">\(a + b = c + d\)</span> since <span class="math inline">\(\lfloor \frac{f(a) + f(b)}{2p} \rfloor = a + b\)</span>, which also means that <span class="math inline">\(\{ a^{2} \} + \{ b^{2} \} = \{ c^{2} \} + \{ d^{2} \}\)</span>.</p>
+<p>Now we have the following conditions: <span class="math inline">\(a + b \equiv c + d \pmod{p}\)</span> and <span class="math inline">\(a^{2} + b^{2} \equiv c^{2} + d^{2} \pmod{p}\)</span>, and the fact that <span class="math inline">\(0 \leq a,b,c,d \leq p - 1\)</span> implies that the pairs <span class="math inline">\(\{ a,b \}  and  \{ c,d \}\)</span> are actually the same. So that means if we have <span class="math inline">\(\{ a,b \} \neq \{ c,d \}\)</span>, then we immediately have <span class="math inline">\(f(a) + f(b) \neq f(c) + f(d)\)</span>, which finishes the proof of the lemma.</p>
+<p>Now all that remains is to plug <span class="math inline">\(p = 101\)</span>, and since we have <span class="math inline">\(2 \cdot (101)^{2} &lt; 25000\)</span>, our problem is done <span class="math inline">\(\blacksquare\)</span>.</p>
+</section>
+</section>
+<section id="comment" class="level2">
+<h2 class="anchored" data-anchor-id="comment">Comment</h2>
+<blockquote class="blockquote">
+<p>I honestly found this problem somewhat nice and bad at the same time because coming up with the function <span class="math inline">\(f(n) = 2pn + \{ n^{2} \}\)</span> wasn’t trivial at all, which actually kills the problem immediately but the result is pretty nice!</p>
+</blockquote>
 
 
 </section>

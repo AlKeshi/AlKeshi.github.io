@@ -2,7 +2,7 @@
 title: "Website"
 ---
 
-Hi Monsieur Aymen, do you like Mr.ZC?
+Hi Monsieur Oussema, do you like Mr.ZC?
 here's a scary chart for you:
 ```{python}
 #| echo: false
@@ -14,4 +14,8 @@ rf.plotting.smith()
 
 ```
 
+## TRES BIEN
+$$
+\chi' = \sum_{i=1}^n k_i s_i^2
+$$
 

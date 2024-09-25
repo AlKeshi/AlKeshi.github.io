@@ -9,6 +9,13 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+      - text: math
+        href: post.qmd
+    right:
+      - icon: github
+        href: https://github.com/Alkeshi
+      - icon: twitter
+        href: https://x.com/Kassuno1
 
 format:
   html:
