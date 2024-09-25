@@ -2,6 +2,15 @@
 title: "Website"
 ---
 
-This is a Quarto website.
+Hi Monsieur TMSniper, do you like Mr.ZC?
+here's a smith chart for you:
+```{python}
+#| echo: false
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.arange(0, 10, 0.1)
+y = np.sin(x)
+plt.plot(x, y)
+```
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
