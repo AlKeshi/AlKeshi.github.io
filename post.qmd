@@ -1,7 +1,7 @@
 ---
 title: "First Post"
 author: "Salem Fradi"
-date: "`r format(Sys.Date(), '%B %d, %Y')`"  # This will now correctly show the date
+date: "`r format(Sys.time(), '%e %B %Y')`"
 format: html
 ---
 こんにちは!
